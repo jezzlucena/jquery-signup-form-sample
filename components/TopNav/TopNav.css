@@ -1,0 +1,15 @@
+.TopNav {
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.TopNav-logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+}

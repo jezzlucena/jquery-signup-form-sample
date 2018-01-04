@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+  <title>Jezz's Sample Sign Up Form v0.1</title>
+
+  <!-- jQuery 3 CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="components/SignupForm/SignupForm.js"></script>
+
+  <link rel="stylesheet" href="app/index.css">
+  <link rel="stylesheet" href="components/TopNav/TopNav.css">
+  <link rel="stylesheet" href="components/SignupForm/SignupForm.css">
+</head>
+<body>
+  <div class="TopNav">
+    <div class="TopNav-logo"></div>
+  </div>
+  <div class="SignupForm">
+    <div class="SignupForm-content">
+      <div class="SignupForm-subtitle">
+        Turns out, the world's most comfortable shoes are made of wool.<br/>
+        Sign up with us for live updates about our products.
+      </div>
+
+      <div class="SignupForm-alertsContainer">
+        <div class="SignupForm-alert SignupForm-alert--passwords">
+          <div class="alert alert-warning">
+            The given passwords do not match.
+          </div>
+        </div>
+
+        <div class="SignupForm-alert SignupForm-alert--emailExists">
+          <div class="alert alert-danger">
+            The chosen email is already registered in our database.
+          </div>
+        </div>
+
+        <div class="SignupForm-alert SignupForm-alert--serverError">
+          <div class="alert alert-danger"></div>
+        </div>
+      </div>
+
+      <form class="SignupForm-content">
+        <div class="SignupForm-userInfo">
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">First Name</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="First Name"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Last Name</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="Last Name"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Email address</div>
+            <input
+              type="email"
+              id="email"
+              class="SignupForm-inputField form-control"
+              placeholder="Email"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Password</div>
+            <input
+              type="password"
+              id="password"
+              class="SignupForm-inputField form-control"
+              placeholder="Password"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Confirm Password</div>
+            <input
+              type="password"
+              id="confirmPassword"
+              class="SignupForm-inputField form-control"
+              placeholder="Confirm Password"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formActions text-center">
+            <a
+              id="nextButton"
+              class="btn btn-primary"
+            >
+              Next
+            </a>
+          </div>
+        </div>
+
+        <div class="SignupForm-address">
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Address Line 1</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="Address Line 1"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Address Line 2</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="Address Line 2"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">City / State</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="City / State"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formGroup form-group">
+            <div class="SignupForm-label">Zip Code</div>
+            <input
+              type="text"
+              class="SignupForm-inputField form-control"
+              placeholder="Zip Code"
+              required
+            >
+          </div>
+
+          <div class="SignupForm-formActions text-center">
+            <button
+              id="backButton"
+              class="btn btn-default"
+            >
+              Back
+            </button>
+            <button
+              type="submit"
+              id="submitButton"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
